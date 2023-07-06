@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400&display=swap");
+
+:root {
+  --main-color: rgb(231, 70, 70);
+  --main2-color: rgb(250, 152, 132);
+  --main3-color: #ffe5ca;
+  --main4-color: #fff3e2;
+  --brown1: #6d5d6e;
+  --footer: #7b697c;
+}
+#app {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #fff3e2;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+* {
+  font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
+}
+
+.input-bg {
+  background-color: azure;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  padding: 10px;
+}
+template {
+  position: relative;
+  overflow: scroll;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+nav button:hover {
+  transition: 0.1s;
+  transform: scale(1.03);
+}

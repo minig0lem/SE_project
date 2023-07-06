@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            font-size: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 12px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .inner-container1 {
+            width: 580px;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner-container2 {
+            width: 580px;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            text-align: center;
+        }
+
+        .item {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .subject-block {
+            width: 550px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            vertical-align: middle;
+            margin: 10px;
+        }
+
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            width: 150px;
+            height: 10px;
+        }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+            width: 150px;
+            height: 20px;
+        }
+
+        .tg .tg-baqh {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .my-button {
+            font-size: 12px;
+            padding: 3px 3px;
+            border-radius: 5px;
+            width: 120px;
+            height: 40px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="inner-container1">
+            <div class="item">
+                <img src="image.jpg" alt="Professor profile" style="width: 40px; height: 200px;">
+            </div>
+            <div class="item">
+                <h2>
+                    <span style="font-size: 15px; font-weight: bold;">이기훈</span> 교수님 반갑습니다.
+                </h2>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-baqh">학과/학부</th>
+                            <th class="tg-baqh">이메일</th>
+                            <th class="tg-baqh">전화번호</th>
+                            </th>
+                    <tbody>
+                        <tr>
+                            <td class="tg-baqh">컴퓨터정보공학부</td>
+                            <td class="tg-baqh">khlee@kw.ac.kr</td>
+                            <td class="tg-baqh">010-12234-5678</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="inner-container2">
+            <h1>담당 과목</h1>
+            <div class="subject-block">
+                <div class="item">
+                    <h2>소프트웨어공학</h2>
+                </div>
+                <div class="item">
+                    <button class="my-button">공지사항 →</button>
+                </div>
+                <div class="item">
+                    <button class="my-button">강의계획서 →</button>
+                </div>
+                <div class="item">
+                    <button class="my-button">강의 묻고 답하기 →</button>
+                </div>
+            </div>
+            <div class="subject-block">
+                <div class="item">
+                    <h2>데이터베이스</h2>
+                </div>
+                <div class="item">
+                    <button class="my-button">공지사항 →</button>
+                </div>
+                <div class="item">
+                    <button class="my-button">강의계획서 →</button>
+                </div>
+                <div class="item">
+                    <button class="my-button">강의 묻고 답하기 →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+        }
+
+        .my-dropdown {
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 100px;
+        }
+
+        .tg {
+            border-collapse: collapse;
+            border-color: #ccc;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            background-color: #ffffff;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-baqh {
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-wp8o {
+            border-color: #000000;
+            text-align: center;
+            vertical-align: top
+        }
+
+        canvas {
+            border: 1px solid #949494;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>성적 조회</h1>
+        <div>
+            <h2>수강/성적 결과</h2>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-baqh">전체 이수 학점</th>
+                        <th class="tg-baqh">전공 이수 학점</th>
+                        <th class="tg-baqh">전체 평량 평균</th>
+                        <th class="tg-baqh">전공 평량 평균</th>
+                        <th class="tg-baqh">전공 외 평량평균</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-baqh">144</td>
+                        <td class="tg-baqh">80</td>
+                        <td class="tg-baqh">4.5</td>
+                        <td class="tg-baqh">4.5</td>
+                        <td class="tg-baqh">4.5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-baqh" colspan="6">학기별 수강/성적 결과
+                            <select class="my-dropdown">
+                                <option value="">학기 선택</option>
+                                <option value="2023-1">2023-1</option>
+                                <option value="2023-1">2022-2</option>
+                                <option value="2023-1">2022-1</option>
+                                <option value="2023-1">2021-2</option>
+                                <option value="2023-1">2021-1</option>
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-wp8o">학정번호</td>
+                        <td class="tg-wp8o">과목명</td>
+                        <td class="tg-wp8o">이수학기</td>
+                        <td class="tg-wp8o">이수구분</td>
+                        <td class="tg-wp8o">학점</td>
+                        <td class="tg-wp8o">성적</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-wp8o">H020-4-8995-01</td>
+                        <td class="tg-wp8o">산학협력캡스톤설계</td>
+                        <td class="tg-wp8o">2023-1</td>
+                        <td class="tg-wp8o">전필</td>
+                        <td class="tg-wp8o">3</td>
+                        <td class="tg-wp8o">A+</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-wp8o">H020-4-8995-01</td>
+                        <td class="tg-wp8o">소프트웨어공학</td>
+                        <td class="tg-wp8o">2023-1</td>
+                        <td class="tg-wp8o">전선</td>
+                        <td class="tg-wp8o">3</td>
+                        <td class="tg-wp8o">A+</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-wp8o">H020-4-8995-01</td>
+                        <td class="tg-wp8o">생활속의과학</td>
+                        <td class="tg-wp8o">2023-1</td>
+                        <td class="tg-wp8o">교선</td>
+                        <td class="tg-wp8o">3</td>
+                        <td class="tg-wp8o">A+</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-wp8o">H020-4-8995-01</td>
+                        <td class="tg-wp8o">소프트웨어프로젝트1</td>
+                        <td class="tg-wp8o">2023-1</td>
+                        <td class="tg-wp8o">전선</td>
+                        <td class="tg-wp8o">3</td>
+                        <td class="tg-wp8o">A+</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>학기별 성적 그래프</h2>
+
+            <canvas id="gradeChart" width="580" height="200"></canvas>
+            <script>
+                var data = [
+                    { x: "2022학년도 1학기", y: 3.5 },
+                    { x: "2022학년도 2학기", y: 4.25 },
+                    { x: "2023학년도 1학기", y: 4.0 }
+                ];
+
+                var canvas = document.getElementById('gradeChart');
+                var ctx = canvas.getContext('2d');
+
+                // Define chart dimensions and margins
+                var chartWidth = canvas.width - 40;
+                var chartHeight = canvas.height - 40;
+                var marginLeft = 40;
+                var marginBottom = 40;
+
+                ctx.fillStyle = '#949494';  // Text color
+                ctx.font = '10px Arial';    // Text size, style
+
+                // Display value of y
+                var yValues = [2.0, 2.5, 3.0, 3.5, 4.0, 4.5];
+                var yStep = chartHeight / (yValues.length);
+                for (var i = 0; i < yValues.length; i++) {
+                    var value = yValues[i];
+                    var y = chartHeight - (yStep * i);
+                    ctx.fillText(value.toString(), 10, y);
+                    ctx.beginPath();
+                    ctx.moveTo(marginLeft, y);
+                    ctx.lineTo(marginLeft + chartWidth, y);
+                    ctx.strokeStyle = '#EAEAEA'; // Grid line color
+                    ctx.stroke();
+                }
+
+                // Display value of x
+                var xValues = ["2022학년도 1학기", "2022학년도 2학기", "2023학년도 1학기"];
+                var xStep = chartWidth / (xValues.length);
+                for (var i = 0; i < xValues.length; i++) {
+                    var value = xValues[i];
+                    var x = marginLeft + xStep * i;
+                    ctx.fillText(value.toString(), x, canvas.height - 5);
+                }
+
+                // Draw graph
+                ctx.beginPath();
+                ctx.moveTo(marginLeft, chartHeight - (data[0].y * yStep));
+
+                for (var i = 1; i < data.length; i++) {
+                    var x = marginLeft + xStep * i;
+                    var y = chartHeight - (data[i].y * yStep);
+                    ctx.lineTo(x, y);
+                }
+
+                ctx.strokeStyle = '#FA9884'; // Color of graph
+                ctx.stroke();
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
