@@ -1,7 +1,8 @@
-# SE_Project3
-Software Engineering 3rd project
+# 🏫소프트웨어 공학 프로젝트 (학사관리 시스템)
 
-Academic Management System(node.js & vue.js)
+
+## 👬팀원
+박찬용(팀장), 정희성
 
 ---
 Commit 내역을 확인하고 싶다면
