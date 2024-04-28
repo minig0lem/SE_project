@@ -35,6 +35,7 @@ $ npm install
 $ npm run build
 ```
 ### Backend
+- config 디렉터리에 db 정보를 기반으로 한 config.json 작성
 ```
 $ cd backend
 $ nvm use v18.15.0
